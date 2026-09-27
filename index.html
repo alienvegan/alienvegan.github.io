@@ -1,66 +1,160 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>ALIENVEGAN – Electronic Music from DUS</title>
+  <title>ALIENVEGAN – Electronic Music Project from DUS</title>
 
-  <meta name="description" content="ALIENVEGAN – unabhängiges elektronisches Musikprojekt aus DUS seit 2017. Synthpop, Electronic, 80s Retro, Analog Synth und kostenlose Musik für Medien und Projekte.">
+  <meta name="description"
+        content="ALIENVEGAN – independent electronic music project from DUS since 2017. Synthpop, electronic, 80s retro, analog synth and free music for creative projects.">
+
   <meta name="robots" content="index, follow">
+
   <link rel="canonical" href="https://alienvegan.github.io/">
 
-  <meta property="og:title" content="ALIENVEGAN – Electronic Music from DUS">
-  <meta property="og:description" content="Independent electronic music project from DUS since 2017. Synthpop, 80s retro, analog synth and free music for projects.">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap"
+        rel="stylesheet">
+
+  <meta property="og:title"
+        content="ALIENVEGAN – Electronic Music Project from DUS">
+
+  <meta property="og:description"
+        content="Independent electronic music project from DUS since 2017. Synthesizers, 80s influence, original music and free music for projects.">
+
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://alienvegan.github.io/">
+
+  <meta property="og:url"
+        content="https://alienvegan.github.io/">
+
+  <meta property="og:image"
+        content="https://alienvegan.github.io/visuals-banner.jpg">
 
   <style>
+
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
       margin: 0;
       background: #111111;
       color: #ececec;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Lato", Arial, sans-serif;
       font-size: 16px;
-      line-height: 1.48;
+      line-height: 1.5;
     }
+
+
+    /* HEADER / BANNER */
+
+    .hero {
+      height: 300px;
+
+      background-image:
+        linear-gradient(
+          rgba(0,0,0,0.08),
+          rgba(0,0,0,0.55)
+        ),
+        url("visuals-banner.jpg");
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-inner {
+      width: 92%;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 16px 24px;
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      color: #ffffff;
+
+      font-size: clamp(2rem, 6vw, 3.2rem);
+
+      font-weight: 700;
+
+      letter-spacing: 0.06em;
+
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .tagline {
+      margin-top: 2px;
+
+      color: #eeeeee;
+
+      font-size: 1.05rem;
+
+      font-weight: 300;
+
+      font-style: italic;
+
+      text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+    }
+
+    .keywords {
+      margin-top: 5px;
+
+      color: #d2ad58;
+
+      font-size: 0.82rem;
+
+      font-weight: 700;
+
+      letter-spacing: 0.05em;
+
+      text-shadow: 0 2px 6px rgba(0,0,0,0.9);
+    }
+
+
+    /* CONTENT */
 
     main {
       width: 92%;
       max-width: 760px;
+
       margin: 0 auto;
-      padding: 34px 16px 45px;
+
+      padding: 28px 16px 45px;
     }
 
-    h1 {
+    section {
       margin: 0;
-      text-align: center;
-      font-size: clamp(2rem, 6vw, 3.2rem);
-      letter-spacing: 0.08em;
-      color: #ffffff;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: #bbbbbb;
-      margin: 2px 0 28px;
-      font-size: 1rem;
+      padding: 0;
     }
 
     h2 {
       margin: 0 0 2px;
+
       font-size: 1.2rem;
+
       color: #ffffff;
+
+      font-weight: 700;
     }
 
     h3 {
       margin: 0 0 12px;
+
       color: #c4a052;
+
       font-size: 0.88rem;
+
+      font-weight: 700;
+
       letter-spacing: 0.05em;
     }
 
@@ -72,21 +166,27 @@
       color: #ffffff;
     }
 
-    section {
-      margin: 0;
-      padding: 0;
-    }
+
+    /* DIVIDERS */
 
     hr {
       border: 0;
+
       border-top: 1px solid #b8963a;
+
       margin: 24px 0;
     }
 
+
+    /* LINKS */
+
     a {
       color: #c4a052;
+
       text-decoration: none;
-      font-weight: bold;
+
+      font-weight: 700;
+
       overflow-wrap: anywhere;
     }
 
@@ -95,17 +195,25 @@
       text-decoration: underline;
     }
 
+
+    /* SPECIAL TEXT */
+
     .formula {
       text-align: center;
+
       color: #c4a052;
-      font-weight: bold;
+
+      font-weight: 700;
+
       font-size: 1.1rem;
+
       margin: 16px 0 4px;
     }
 
     .highlight {
       color: #c4a052;
-      font-weight: bold;
+
+      font-weight: 700;
     }
 
     .center {
@@ -118,52 +226,95 @@
 
     .links {
       margin: 10px 0;
+
       line-height: 1.75;
     }
 
     .footer-line {
       font-size: 0.9rem;
-      font-weight: bold;
+
+      font-weight: 700;
+
       letter-spacing: 0.03em;
     }
 
+
+    /* FOOTER */
+
     footer {
       text-align: center;
+
       margin-top: 28px;
+
       padding-top: 18px;
+
       border-top: 1px solid #b8963a;
-      color: #aaaaaa;
+
+      color: #888888;
+
       font-size: 0.78rem;
     }
 
+
+    /* MOBILE */
+
     @media (max-width: 600px) {
+
       body {
         font-size: 15px;
       }
 
-      main {
-        width: 94%;
-        padding-top: 26px;
+      .hero {
+        height: 230px;
       }
 
-      h1 {
-        font-size: 2.25rem;
+      .hero-inner {
+        padding-bottom: 18px;
+      }
+
+      .hero h1 {
+        font-size: 2.15rem;
+      }
+
+      .tagline {
+        font-size: 0.95rem;
+      }
+
+      .keywords {
+        font-size: 0.7rem;
+      }
+
+      main {
+        width: 94%;
+
+        padding-top: 22px;
       }
 
       hr {
         margin: 20px 0;
       }
+
     }
+
   </style>
+
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+
     "@type": "MusicGroup",
+
     "name": "ALIENVEGAN",
+
     "url": "https://alienvegan.github.io/",
+
+    "image": "https://alienvegan.github.io/visuals-banner.jpg",
+
     "description": "Independent electronic music project from DUS since 2017. Synthpop, electronic, 80s retro and analog synth music.",
+
     "foundingDate": "2017",
+
     "sameAs": [
       "https://www.instagram.com/alienvegan1/",
       "https://soundcloud.com/alienvegan",
@@ -171,37 +322,65 @@
     ]
   }
   </script>
+
 </head>
 
+
 <body>
+
+
+<header class="hero">
+
+  <div class="hero-inner">
+
+    <h1>ALIENVEGAN</h1>
+
+    <div class="tagline">
+      Electronic Music Project from DUS
+    </div>
+
+    <div class="keywords">
+      SYNTHESIZERS · 80s INFLUENCE · ORIGINAL MUSIC · FREE TO USE
+    </div>
+
+  </div>
+
+</header>
+
+
 <main>
 
-  <header>
-    <h1>ALIENVEGAN</h1>
-    <div class="subtitle">Music Project</div>
-  </header>
 
   <section>
+
+    <h2>Alienvegan - Music Project</h2>
+
     <p>
-      <strong>Alienvegan</strong> ist ein unabhängiges Musikprojekt mit Ursprung
-      in <strong>DUS, seit 2017</strong>.
+      <strong>Alienvegan</strong> ist ein unabhängiges Musikprojekt
+      mit Ursprung in <strong>DUS, seit 2017</strong>.
     </p>
 
     <p>
       Im Mittelpunkt stehen eigene Kompositionen mit Synthesizern,
-      elektronischen Sounds und einem deutlichen Bezug zur Ästhetik der 80er Jahre.
+      elektronischen Sounds und einem deutlichen Bezug zur Ästhetik
+      der 80er Jahre.
     </p>
 
     <p>
       <strong>Alienvegan</strong> entstand, um seine musikalischen Ideen
       festzuhalten und direkt online zu teilen.
     </p>
+
   </section>
+
 
   <hr>
 
+
   <section>
+
     <h2>👽 WHY „ALIENVEGAN“?</h2>
+
     <h3>THE NAME BEHIND THE PROJECT</h3>
 
     <p>
@@ -210,158 +389,264 @@
     </p>
 
     <p>
-      Dieses Gefühl, manchmal ein wenig außerhalb zu stehen, Dinge anders
-      wahrzunehmen oder sich nicht vollständig mit dem Gewöhnlichen zu
-      identifizieren, wurde ein Teil des Namens.
+      Dieses Gefühl, manchmal ein wenig außerhalb zu stehen,
+      Dinge anders wahrzunehmen oder sich nicht vollständig
+      mit dem Gewöhnlichen zu identifizieren,
+      wurde ein Teil des Namens.
     </p>
 
     <p>
-      Der zweite Teil entstand dadurch, dass der Künstler hinter dem Projekt
+      Der zweite Teil entstand dadurch,
+      dass der Künstler hinter dem Projekt
       so gut es geht vegan lebt.
     </p>
 
     <div class="formula">
       ALIEN + VEGAN = ALIENVEGAN
     </div>
+
   </section>
+
 
   <hr>
 
+
   <section>
+
     <h2>🎁 FREE MUSIC FOR YOUR PROJECT</h2>
+
     <h3>FREE TO USE · NO LICENCE FEE</h3>
 
     <p>
-      Die Musik von <strong>alienvegan darf kostenlos verwendet werden</strong>,
+      Die Musik von
+      <strong>alienvegan darf kostenlos verwendet werden</strong>,
       wenn sie zu deinem Projekt passt.
     </p>
 
     <p class="tags">
+
       🎥 <strong>Videos</strong> ·
       📱 <strong>Social Media</strong> ·
       ▶️ <strong>YouTube</strong> ·
       🌐 <strong>Webseiten</strong> ·
-      🎙️ <strong>Podcasts</strong><br>
+      🎙️ <strong>Podcasts</strong>
+
+      <br>
 
       📞 <strong>Telefonanlagen &amp; Warteschleifen</strong> ·
       📨 <strong>Mailboxen</strong> ·
-      🎬 <strong>Intros &amp; Outros</strong><br>
+      🎬 <strong>Intros &amp; Outros</strong>
+
+      <br>
 
       🖥️ <strong>Präsentationen</strong> ·
       🎞️ <strong>Videountermalung</strong> ·
       🏢 <strong>geschäftliche Projekte</strong> ·
       🏠 <strong>private Projekte</strong>
+
     </p>
 
-    <p>Hörproben / Download findest Du auf:</p>
+
+    <p>
+      Hörproben / Download findest Du auf:
+    </p>
+
 
     <div class="links">
+
       Instagram →
+
       <a href="https://www.instagram.com/alienvegan1/"
-         target="_blank" rel="noopener noreferrer">@alienvegan1</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        @alienvegan1
+      </a>
+
       <br>
+
       SoundCloud →
+
       <a href="https://soundcloud.com/alienvegan"
-         target="_blank" rel="noopener noreferrer">alienvegan</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        alienvegan
+      </a>
+
     </div>
+
 
     <p class="center highlight">
       💡 Gefällt dir ein Teil der Musik? → Dann nutze ihn.
     </p>
+
   </section>
+
 
   <hr>
 
+
   <section>
+
     <h2>🎛️ THE MUSIC</h2>
-    <h3>SYNTHPOP · ELECTRONIC · 80s RETRO · INSTRUMENTAL · ANALOG SYNTH</h3>
 
-    <p>Viele Stücke beginnen ganz einfach:</p>
+    <h3>
+      SYNTHPOP · ELECTRONIC · 80s RETRO · INSTRUMENTAL · ANALOG SYNTH
+    </h3>
 
-    <p class="tags">
-      🎹 <strong>eine Akkordfolge</strong> ·
-      🎛️ <strong>ein Synthesizer-Sound</strong> ·
-      🎶 <strong>eine kleine Melodie</strong> ·
-      🥁 <strong>eine einfache Rhythmusidee</strong>
-    </p>
 
     <p>
-      Daraus entstehen nach und nach vollständige Tracks. Dabei geht es nicht
-      darum, möglichst perfekt oder möglichst kommerziell zu klingen.
+      Viele Stücke beginnen ganz einfach:
     </p>
+
+
+    <p class="tags">
+
+      🎹 <strong>eine Akkordfolge</strong> ·
+
+      🎛️ <strong>ein Synthesizer-Sound</strong> ·
+
+      🎶 <strong>eine kleine Melodie</strong> ·
+
+      🥁 <strong>eine einfache Rhythmusidee</strong>
+
+    </p>
+
+
+    <p>
+      Daraus entstehen nach und nach vollständige Tracks.
+      Dabei geht es nicht darum,
+      möglichst perfekt oder möglichst kommerziell zu klingen.
+    </p>
+
 
     <p class="center highlight">
       ATMOSPHÄRE · MELODIE · WIEDERERKENNUNGSWERT · EIGENE IDEEN
     </p>
 
+
     <p>
-      Die elektronische Musik der 1980er Jahre ist dabei ein wichtiger
-      Einfluss des Projekts.
+      Die elektronische Musik der 1980er Jahre
+      ist dabei ein wichtiger Einfluss des Projekts.
     </p>
+
   </section>
 
+
   <hr>
+
 
   <section>
+
     <h2>⚠️ NOT EVERY „ALIENVEGAN“ IS ALIENVEGAN</h2>
+
     <h3>A NOTE ABOUT OTHER ACCOUNTS</h3>
 
+
     <p>
-      Unter dem Namen <strong>alienvegan</strong> beziehungsweise ähnlichen
-      Handles existieren inzwischen auch verschiedene andere Social-Media-Accounts.
+      Unter dem Namen <strong>alienvegan</strong>
+      beziehungsweise ähnlichen Handles
+      existieren inzwischen auch verschiedene
+      andere Social-Media-Accounts.
     </p>
 
-    <p>Einige davon beschäftigen sich beispielsweise mit:</p>
+
+    <p>
+      Einige davon beschäftigen sich beispielsweise mit:
+    </p>
+
 
     <p class="tags">
+
       🌱 <strong>veganer Ernährung</strong> ·
+
       🐾 <strong>Tierrechten</strong> ·
+
       🥩 <strong>tierischen Erzeugnissen</strong> ·
+
       📢 <strong>Aktivismus</strong> ·
+
       💬 <strong>gesellschaftlichen oder politischen Themen</strong>
+
     </p>
 
+
     <p class="center">
+
       <strong>
-        Diese Accounts stehen nicht in Verbindung mit dem Musikprojekt alienvegan.
+        Diese Accounts stehen nicht in Verbindung
+        mit dem Musikprojekt alienvegan.
       </strong>
+
     </p>
+
   </section>
+
 
   <hr>
 
+
   <section class="center">
+
     <p class="footer-line">
+
       ALIENVEGAN · INDEPENDENT ELECTRONIC MUSIC · SINCE 2017 · DUS
       · FREE MUSIC FOR MEDIA &amp; PROJECTS
+
     </p>
 
+
     <p>
+
       ✅ Kostenlose Nutzung ·
       ✅ Eigene Projekte ·
       ✅ Hintergrundmusik ·
       ✅ Ausschnitte
+
     </p>
 
+
     <div class="links">
+
       Instagram →
+
       <a href="https://www.instagram.com/alienvegan1/"
-         target="_blank" rel="noopener noreferrer">@alienvegan1</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        @alienvegan1
+      </a>
+
       <br>
+
       SoundCloud →
+
       <a href="https://soundcloud.com/alienvegan"
-         target="_blank" rel="noopener noreferrer">alienvegan</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        alienvegan
+      </a>
+
       <br>
+
       Google Site →
+
       <a href="https://sites.google.com/view/alienvegan"
-         target="_blank" rel="noopener noreferrer">sites.google.com/view/alienvegan</a>
+         target="_blank"
+         rel="noopener noreferrer">
+        sites.google.com/view/alienvegan
+      </a>
+
     </div>
+
   </section>
+
 
   <footer>
     © ALIENVEGAN · DUS · SINCE 2017
   </footer>
 
+
 </main>
+
 </body>
+
 </html>
